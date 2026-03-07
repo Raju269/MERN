@@ -1,68 +1,71 @@
-// let num1 = 231;
-// let num2 = new Number(231);
-// let num3 = new Number(231);
-// console.log(num1==num2); // when number is compared with object, it converts object to primitive value (as when num is compared with string, it converts string to number, when number is compared with boolean, it converts boolean to number)
+let num1 = 231;
+let num2 = new Number(231);
+let num3 = new Number(231);
+console.log(num1==num2); 
+// when number is compared with object, it converts object to primitive value (as when num is compared with string, it converts string to number, when number is compared with boolean, it converts boolean to number)
 // num2 wil be converted to primitive value 231 and then compared with num1, hence turns true
-// console.log(num2==num3); // this will check the reference of num2 and num3 in stack, both are different objects, hence false
+console.log(num2==num3); 
+// this will check the reference of num2 and num3 in stack, both are different objects, hence false
 // true and false
-// console.log(num2);
-// console.log(typeof num2);
+console.log(num2);
+console.log(typeof num2);
 
-// let num = 231.68;
-// console.log(num.toFixed(3)); // returns string, 3 is the number of digits after decimal point, 231.680
-// console.log(num.toPrecision(4)); // returns string, 4 is the total number of digits in the number, 231.7
-// console.log(num.toExponential(2)); // returns string, 2 is the number of digits after decimal point in exponential form, // 2.32e+2
-// console.log(num.toString()); // returns string, converts number to string
-// console.log(num.valueOf()); // returns number, gives the primitive value of the object
-// console.log(typeof num.toString()); // output: string
-// console.log(typeof num.valueOf()); // output: number
-// console.log(typeof num); // output: number
+let num = 231.68;
+console.log(num.toFixed(3)); // returns string, 3 is the number of digits after decimal point, 231.680
+console.log(num.toPrecision(4)); // returns string, 4 is the total number of digits in the number, 231.7
+console.log(num.toExponential(2)); // returns string, 2 is the number of digits after decimal point in exponential form, // 2.32e+2
+console.log(num.toString()); // returns string, converts number to string
+console.log(num.valueOf()); // returns number, gives the primitive value of the object
+console.log(typeof num.toString()); // output: string
+console.log(typeof num.valueOf()); // output: number
+console.log(typeof num); // output: number
 
-//let num = new Number(231.68); // object
-// console.log(num.toFixed(3)); // returns string, 3 is the number of digits after decimal point, 231.680
-// console.log(num.toPrecision(4)); // returns string, 4 is the total number of digits in the number, 231.7
+let numb = new Number(231.68); // object
+console.log(numb.toFixed(3)); // returns string, 3 is the number of digits after decimal point, 231.680
+console.log(numb.toPrecision(4)); // returns string, 4 is the total number of digits in the number, 231.7
 
 //  Math
 
-// console.log(Math.E) 
+console.log(Math.E) 
 // Ans: 2.718281828459045
 // Explanation: Math.E is Euler's number, the base of natural logarithms.
 
-// console.log(Math.LN10);
+console.log(Math.LN10);
 // Ans: 2.302585092994046
 // Explanation: Math.LN10 is the natural logarithm of 10 (ln(10)). (base e.)
 
-// console.log(Math.PI);
+console.log(Math.PI);
 // Ans: 3.141592653589793
 // Explanation: Math.PI is the ratio of a circle's circumference to its diameter (π).
 
-// console.log(Math.LOG10E);
+console.log(Math.LOG10E);
 // Ans: 0.4342944819032518
 // Explanation: Math.LOG10E is the base-10 logarithm of Euler's number
 
 
-// console.log(Math.random()); // returns a random number between 0 (inclusive) and 1 (exclusive)
-// console.log(Math.random() * 10); // returns a random number between 0 (inclusive) and 10 (exclusive) 
+console.log(Math.random()); // returns a random number between 0 (inclusive) and 1 (exclusive)
+console.log(Math.random() * 10); // returns a random number between 0 (inclusive) and 10 (exclusive) 
 
 // floor and ceil
-// let num1 = 23.1;
-// console.log(Math.floor(num1)); // Ans: 23 (neeche wali value)
-// console.log(Math.ceil(num1)); // Ans: 24 (uppar wali value)
+let num12 = 23.1;
+console.log(Math.floor(num12)); // Ans: 23 (neeche wali value)
+console.log(Math.ceil(num12)); // Ans: 24 (uppar wali value)
 
 
-// console.log(Math.floor(Math.random()*10)); // returns a random integer between 0 (inclusive) and 10 (exclusive) [0-9]
-// console.log(Math.ceil(Math.random()*10)); // returns a random integer between 1 (inclusive) and 11 (exclusive) [1-10]
+console.log(Math.floor(Math.random()*10)); // returns a random integer between 0 (inclusive) and 10 (exclusive) [0-9]
+console.log(Math.ceil(Math.random()*10)); // returns a random integer between 1 (inclusive) and 11 (exclusive) [1-10]
 
 
 // 1-10 generate
-// console.log(Math.floor(Math.random()*10)+1)
+console.log(Math.floor(Math.random()*10)+1)
 
 // 11-20 generate
-// console.log(Math.floor(Math.random()*10)+11);
+console.log(Math.floor(Math.random()*10)+11);
 // 0-9 + 11
 
-// min = 40 , max =50;
-// console.log(Math.floor(Math.random()*(max-min+1)+min)); // returns a random integer between min (inclusive) and max (inclusive)
+min = 40 , max =50;
+console.log(Math.floor(Math.random()*(max-min+1)+min)); 
+// returns a random integer between min (inclusive) and max (inclusive)
 // explanation: Math.random() generates a random number between 0 (inclusive) and 1 (exclusive).
 // Multiplying by (max - min + 1) scales the random number to the desired range.
 // Adding min shifts the range to start from the desired minimum value.
